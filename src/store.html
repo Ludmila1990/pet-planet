@@ -140,12 +140,32 @@
   <div class="modal-overlay">
     <div class="modal">
       <div class="modal__content">
-        <h2>Корзина</h2>
-        <ul class="modal__cart-items"></ul>
+        <h2 class="modal__title">Корзина</h2>
+        <ul class="modal__cart-items">
+        </ul>
+
+        <form action="" class="modal__cart-form">
+          <fieldset class="modal__cart-fieldset">
+            <legend class="modal__cart-legent">Самовывоз из магазина:</legend>
+            <label for="" class="modal__radio radio">ул. Адамавая 45/1
+              <input type="radio" name="store" value="1" class="radio__input" checked>
+            </label>
+            <label for="" class="modal__radio radio">ул. Вишневая 74
+              <input type="radio" name="store" value="2" class="radio__input">
+            </label>
+            <label for="" class="modal__radio radio">ул. Чехова 106/28
+              <input type="radio" name="store" value="3" class="radio__input">
+            </label>
+          </fieldset>
+
+          <div class="modal__cart-footer">
+            <button class="modal__cart-button">Заказать</button>
+            <p class="modal__cart-price">0&nbsp;₽</p>
+          </div>
+        </form>
       </div>
     </div>
     <button class="modal-overlay__close-button">&times;</button>
   </div> 
 </body>
-
 </html>
